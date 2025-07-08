@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    background: radial-gradient(circle at center, #ff5f6d, #ffc371, #47e7f3, #845ec2);
+    background-size: 200% 200%;
+    animation: pulse 6s ease infinite;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    /* border-radius: 1.25rem; */
+}
+@keyframes pulse {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+#heading{
+    height: fit-content;
+    width: fit-content;
+    text-shadow: 2px black;
+    text-transform: capitalize;
+    color: azure;
+    /* border: 2px solid black; */
+    border-radius: 4.5rem;
+    position: relative;
+    margin: 10px;
+    /* background-color: aqua; */
+    padding: 5px;
+    box-shadow: 5px 5px 50px grey;
+}
+#hint{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2px;
+    width: fit-content;
+    height: fit-content;
+}
+.massage{
+    background-color: lightgoldenrodyellow;
+    font-size: larger;
+    height: fit-content;
+    width: auto;
+    margin: 2px;
+    padding: 5px;
+    border-radius: 0.75rem;
+}
+.form{
+    margin: 50px;
+}
+.input{
+    height: 4rem;
+    margin-top: 10px;
+    border-radius: 0.75rem;
+    font-size: x-large;
+    padding-left: 15px;
+    border: none;
+
+}
+.submit-btn{
+    height: 4rem;
+    font-size: x-large;
+    padding: 2px;
+    border-radius: 0.75rem;
+    border: none;
+    min-width: 6rem;
+}
+.result{
+    position: fixed;
+    top: 0.5rem;
+    min-width: 75%;
+    min-height: 82%;
+    /* background: none; */
+    background: radial-gradient(circle at center, #ff5f6d, #ffc371, #47e7f3, #845ec2);
+    background-size: 200% 200%;
+    animation: pulse 6s ease infinite;
+    border-radius: 0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 50px 50px  100px gray;
+}
+.result img{
+    height: 50vh;
+    display: inline;
+    visibility: inherit;
+
+}
+.result #score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset;
+    background-color: lightblue;
+    min-width: 25%;
+    padding: 5px;
+    margin: 5px;
+    font-size: large;
+    border-radius: 0.75rem;
+}
+
+#reset{
+    height: fit-content;
+    border-radius: 0.75rem;
+    font-size: large;
+    width: fit-content;
+    padding: 10px;
+    border: none;
+}

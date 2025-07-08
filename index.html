@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="tittle.png">
+</head>
+<body>
+    
+    <div class="container">
+        
+        <div id="heading">
+            <img src="tittle.png" alt="guess the number" style="border-radius: 4.5rem; height: 25rem;">
+        </div>
+        <div class="massage">
+            <p id="hint">
+                Enter number to start
+            </p>
+        </div>
+        <div class="form">
+            <input title="number" class="input" type="number" placeholder="enter number">
+            <button class="submit-btn" >submit</button>
+        </div>
+        <div class="result" style="opacity: 0; pointer-events: none;">
+            <img src="winner-removebg-preview.png" alt="winner">
+            <div id="score"></div>
+            
+           
+        </div>
+        <div class="start-btn">
+        <button id="reset" onclick="resetGame()">
+            reset
+           </button>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
